@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YY Media Printing Services | Printing Made Easier</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        :root { --biru: #0077B6; --biru-gelap: #005F8F; --putih: #FFFFFF; --kelabu: #F8F9FA; --teks: #333333; }
+        body { color: var(--teks); line-height: 1.6; }
+        
+        /* Navigasi */
+        nav { background: var(--biru); padding: 1rem 5%; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .logo { color: white; font-size: 1.5rem; font-weight: bold; text-decoration: none; }
+        .nav-links { display: flex; gap: 2rem; flex-wrap: wrap; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: #FFD60A; }
+        
+        /* Bahagian Umum */
+        section { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        h2 { color: var(--biru); font-size: 2rem; text-align: center; margin-bottom: 2.5rem; }
+        .btn { display: inline-block; background: var(--biru); color: white; padding: 0.8rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: var(--biru-gelap); transform: translateY(-2px); }
+        
+        /* Laman Utama */
+        #utama { background: linear-gradient(135deg, var(--biru) 0%, #0096C7 100%); color: white; text-align: center; padding: 5rem 5%; }
+        #utama h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        #utama p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+        
+        /* Tentang Kami */
+        #tentang { background: var(--putih); }
+        .tentang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .misi-visi { background: var(--kelabu); padding: 2rem; border-radius: 10px; margin-top: 2rem; }
+        .misi-visi h3 { color: var(--biru); margin-bottom: 1rem; }
+        
+        /* Produk */
+        #produk { background: var(--kelabu); }
+        .produk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .produk-kad { background: white; border-radius: 10px; padding: 1.5rem; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: 0.3s; }
+        .produk-kad:hover { transform: translateY(-5px); }
+        .produk-kad h3 { color: var(--biru); margin: 1rem 0; }
+        .produk-gambar { background: #E0F2F9; height: 150px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: var(--biru); font-weight: bold; }
+        
+        /* Galeri */
+        #galeri { background: white; }
+        .galeri-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .galeri-item { background: var(--kelabu); height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #777; border: 2px dashed #CCC; }
+        
+        /* Hubungi Kami */
+        #hubungi { background: var(--kelabu); }
+        .hubungi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+        .maklumat p { margin: 0.8rem 0; font-size: 1.05rem; }
+        .maklumat strong { color: var(--biru); }
+        
+        /* Kaki Halaman */
+        footer { background: var(--biru); color: white; text-align: center; padding: 2rem 5%; margin-top: 2rem; }
+        
+        /* Responsif */
+        @media(max-width: 768px) {
+            .nav-links { margin-top: 1rem; gap: 1rem; }
+            .tentang-grid, .hubungi-grid { grid-template-columns: 1fr; }
+            #utama h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔝 NAVIGASI -->
+    <nav>
+        <div class="nav-container">
+            <a href="#utama" class="logo">YY MEDIA PRINTING</a>
+            <div class="nav-links">
+                <a href="#utama">Utama</a>
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#produk">Produk</a>
+                <a href="#galeri">Galeri</a>
+                <a href="#hubungi">Hubungi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🏠 LAMAN UTAMA -->
+    <section id="utama">
+        <h1>Selamat Datang ke YY Media Printing</h1>
+        <p><em>"Printing Made Easier — Di Mana Kreativiti Bertemu Kualiti, Terus Dari Rumah Anda"</em></p>
+        <p>Percetakan berkualiti tinggi, harga berpatutan, dan perkhidmatan mesra pelanggan — semua di satu tempat!</p>
+        <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" class="btn">📲 Buat Tempahan Sekarang</a>
+    </section>
+
+    <!-- 👤 TENTANG KAMI -->
+    <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <div class="tentang-grid">
+            <div>
+                <h3 style="color: #0077B6; margin-bottom: 1rem;">Siapa Kami?</h3>
+                <p><strong>YY Media Printing Services</strong> ialah perniagaan percetakan berdaftar yang beroperasi dari Kampung Sungai Udang, Klang. Ditubuhkan pada tahun 2022, kami berpegang kepada prinsip <em>"Printing Made Easier"</em> — menjadikan urusan percetakan lebih mudah, pantas dan mesra pelanggan.</p>
+                <p style="margin-top: 1rem;">Sebagai studio percetakan sendiri, kami menawarkan harga yang lebih kompetitif tanpa menjejaskan kualiti. Semua proses daripada rekaan, cetakan, kemasan hingga pembungkusan dikendalikan sendiri oleh pasukan kami.</p>
+            </div>
+            <div class="misi-visi">
+                <h3>🎯 Misi</h3>
+                <ul style="margin-left: 1.2rem; margin-bottom: 1.5rem;">
+                    <li>Kualiti Tanpa Kompromi</li>
+                    <li>Harga Berpatutan (mula RM0.50/seunit)</li>
+                    <li>Kreativiti Tanpa Had</li>
+                    <li>Perkhidmatan Mesra & Pantas</li>
+                    <li>Kepuasan Sepenuhnya</li>
+                </ul>
+                <h3>👁️ Visi</h3>
+                <p>Menjadi jenama percetakan berasaskan rumah nombor satu di Selangor & Malaysia — pusat sehenti untuk segala keperluan cetakan & rekaan kreatif.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🛒 PRODUK & PERKHIDMATAN -->
+    <section id="produk">
+        <h2>Produk & Perkhidmatan</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">Semua produk boleh disesuaikan sepenuhnya — tambah nama, tukar warna, ikut rekaan anda sendiri!</p>
+        
+        <div class="produk-grid">
+            <div class="produk-kad">
+                <div class="produk-gambar">🪧</div>
+                <h3>Bunting & Banner</h3>
+                <p>Bunting, Banner, Foamboard, Roll Up — pelbagai saiz & bahan.</p>
+                <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Order →</a>
+            </div>
+            <div class="produk-kad">
+                <div class="produk-gambar">💳</div>
+                <h3>Kad Nama & ID</h3>
+                <p>Kad perniagaan, kad pekerja, ID kad — rekaan profesional.</p>
+                <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Order →</a>
+            </div>
+            <div class="produk-kad">
+                <div class="produk-gambar">💌</div>
+                <h3>Kad Kahwin & Jemputan</h3>
+                <p>Pelbagai rekaan kad jemputan perkahwinan — cantik & berkualiti.</p>
+                <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Order →</a>
+            </div>
+            <div class="produk-kad">
+                <div class="produk-gambar">📄</div>
+                <h3>Risalah & Flyers</h3>
+                <p>Flyers, Brosur, Risalah — cetakan tajam & warna terang.</p>
+                <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Order →</a>
+            </div>
+            <div class="produk-kad">
+                <div class="produk-gambar">🎂</div>
+                <h3>Cake Topper</h3>
+                <p>Hiasan kek semua tema — hari jadi, perkahwinan, majlis khas.</p>
+                <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Order →</a>
+            </div>
+            <div class="produk-kad">
+                <div class="produk-gambar">🎖️</div>
+                <h3>Lencana & Cenderahati</h3>
+                <p>Button Badge, Rantai Kunci, Magnet Peti Sejuk, Penanda Buku.</p>
+                <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Order →</a>
+            </div>
+            <div class="produk-kad">
+                <div class="produk-gambar">🏆</div>
+                <h3>Trofi & Pingat</h3>
+                <p>Plak, Pingat & Trofi Anugerah — sesuai untuk sekolah & syarikat.</p>
+                <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Order →</a>
+            </div>
+            <div class="produk-kad">
+                <div class="produk-gambar">🎨</div>
+                <h3>Percetakan Sublimasi</h3>
+                <p>Cetakan pada pelbagai produk — tahan lama & warna kekal cerah.</p>
+                <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Order →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🖼️ GALERI HASIL KERJA -->
+    <section id="galeri">
+        <h2>Galeri Hasil Kerja</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">Tempat untuk tunjuk hasil kerja kami — masukkan gambar awak di sini kemudian!</p>
+        <div class="galeri-grid">
+            <div class="galeri-item">📸 Gambar Bunting</div>
+            <div class="galeri-item">📸 Gambar Kad Nama</div>
+            <div class="galeri-item">📸 Gambar Cake Topper</div>
+            <div class="galeri-item">📸 Gambar Lencana</div>
+            <div class="galeri-item">📸 Gambar Kad Kahwin</div>
+            <div class="galeri-item">📸 Gambar Trofi</div>
+            <div class="galeri-item">📸 Gambar Flyers</div>
+            <div class="galeri-item">📸 Gambar Lain-lain</div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-style: italic;">💡 Petua: Ganti kotak di atas dengan gambar sebenar hasil kerja awak supaya pelanggan boleh lihat kualiti!</p>
+    </section>
+
+    <!-- 📞 HUBUNGI KAMI -->
+    <section id="hubungi">
+        <h2>Hubungi Kami</h2>
+        <div class="hubungi-grid">
+            <div class="maklumat">
+                <p><strong>🏪 YY Media Printing Services</strong></p>
+                <p><strong>📜 No. Pendaftaran SSM:</strong> SA0625654-W / 202403310192</p>
+                <p><strong>📍 Alamat:</strong> Lot 1089, Lorong Hj Abdul Hamid, Jalan Selamat, Kampung Sungai Udang, 41250 Klang, Selangor</p>
+                <p><strong>📞 Telefon:</strong> 013-638 5820</p>
+                <p><strong>📲 WhatsApp:</strong> <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" style="color: #0077B6;">Klik di sini untuk WhatsApp</a></p>
+                <p><strong>📧 Emel:</strong> yymedia07@gmail.com</p>
+                <p><strong>📢 Telegram:</strong> <a href="https://t.me/yymediaArtworkChannels" target="_blank" style="color: #0077B6;">Saluran Artwork</a> | <a href="https://t.me/yycaketopper" target="_blank" style="color: #0077B6;">Cake Topper</a></p>
+                <p><strong>🎵 TikTok:</strong> <a href="https://tiktok.com/@yymedia.printingservice" target="_blank" style="color: #0077B6;">@yymedia.printingservice</a></p>
+            </div>
+            <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
+                <h3 style="color: var(--biru); margin-bottom: 1rem;">Hantar Mesej</h3>
+                <p style="margin-bottom: 1rem;">Ada soalan atau nak sebut harga? Hubungi kami terus melalui WhatsApp:</p>
+                <a href="https://wasap.my/60136385820/yymediaprinting" target="_blank" class="btn" style="width: 100%; text-align: center; display: block; margin-bottom: 1rem;">💬 Mesej Kami di WhatsApp</a>
+                <p style="font-size: 0.9rem; color: #666;">Kami biasanya balas dalam masa beberapa minit!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🦶 KAKI HALAMAN -->
+    <footer>
+        <p><strong>YY Media Printing Services</strong> — "Printing Made Easier"</p>
+        <p style="margin-top: 0.5rem;">© 2026 Hak Cipta Terpelihara. Berdaftar SSM SA0625654-W.</p>
+    </footer>
+
+</body>
+</html>
