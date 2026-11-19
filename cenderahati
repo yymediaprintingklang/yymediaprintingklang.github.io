@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woven Beg | YY Media Printing</title>
+    <title>Cedera Hati | YY Media Printing</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
         :root { --biru: #0077B6; --biru-gelap: #005F8F; --putih: #FFFFFF; --kelabu: #F8F9FA; --teks: #333333; }
@@ -47,7 +47,7 @@
     </div>
 
     <main>
-        <h2>Beg Bukan Tenun (BNH-5P)</h2>
+        <h2>Cendera Hati (BNH-5P)</h2>
         
         <div class="grid-produk">
             <div>
@@ -56,7 +56,7 @@
             </div>
             
             <div>
-                <h3>Beg Bukan Tenun BNH-5P</h3>
+                <h3>Cendera Hati-5P</h3>
                 <p class="harga">RM24.70</p>
                 
                 <table>
